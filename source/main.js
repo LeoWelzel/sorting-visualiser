@@ -1,4 +1,5 @@
 import { bubbleSort } from './algorithms/bubblesort.js'
+import { insertionSort } from './algorithms/insertionsort.js'
 
 import { Draw } from './draw.js';
 
@@ -30,13 +31,13 @@ setup();
 let drawer = new Draw(canvas, context);
 
 let arr = [];
-for (let i = 1; i <= 10; i++)
+for (let i = 1; i <= 20; i++)
     arr.push(i);
 
 shuffle(arr);
 
 let states = [];
-bubbleSort(arr, states);
+insertionSort(arr, states);
 let currentIndex = 0;
 
 function animate()
