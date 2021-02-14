@@ -34,7 +34,6 @@ export function onResize(app)
     $(window).on('resize', function()
     {
         app.adjustCanvasDimensions();
-        console.log("Adjusting");
     })
 }
 

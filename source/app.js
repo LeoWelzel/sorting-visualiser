@@ -4,19 +4,9 @@ import { bubbleSort } from './algorithms/bubblesort.js'
 import { insertionSort } from './algorithms/insertionsort.js'
 import { quickSort } from './algorithms/quicksort.js'
 import { mergeSort } from './algorithms/mergesort.js'
+import { heapSort } from './algorithms/heapsort.js'
 
-function shuffle(array)
-{
-    let currentIndex = array.length, randomIndex;
-
-    while (0 !== currentIndex)
-    {
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        --currentIndex;
-    
-        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-    }
-}
+import { shuffle } from './shuffle.js'
 
 const DEFAULT_ARR_LENGTH = 128,
       DRAWER_HEIGHT_FRACTION = 0.7,
@@ -94,6 +84,9 @@ export class App
                 break;
             case 'Quicksort':
                 quickSort(this.arr, this.states);
+                break;
+            case 'Heapsort':
+                heapSort(this.arr, this.states);
                 break;
         }
         this.currentIndex = 0;

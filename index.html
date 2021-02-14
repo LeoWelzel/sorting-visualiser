@@ -17,15 +17,14 @@
     <script src="bootstrap/bootstrap.min.js"></script>
     <script type="module" src="source/main.js"></script>
     <link rel="stylesheet" href="source/style/main.css">
+    <link rel="icon" href="source/style/icon.png">
+    <title>Sorting visualiser</title>
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNavbar">
         <a class="navbar-brand" href="#">Sorting algorithm visualiser</a>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Algorithms
@@ -35,7 +34,7 @@
                         <li><a class="dropdown-item" href="#">Insertion sort</a></li>
                         <!-- <li><a class="dropdown-item" href="#">Selection sort</a></li> -->
                         <li><hr class="dropdown-divider"></li>
-                        <!-- <li><a class="dropdown-item" href="#">Heapsort</a></li> -->
+                        <li><a class="dropdown-item" href="#">Heapsort</a></li>
                         <li><a class="dropdown-item" href="#">Merge sort</a></li>
                         <li><a class="dropdown-item" href="#">Quicksort</a></li>
                     </ul>
@@ -46,12 +45,10 @@
                     </button>
                 </li>
                 <li class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!-- invisible ^^ -->
                     <button type="button" class="collapse navbar-collapse btn btn-primary" id="toggleExecution" disabled>
                         Select an algorithm
                     </button>
                 </li>
-
             </ul>
         </div>
     </nav>
