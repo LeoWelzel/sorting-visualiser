@@ -5,6 +5,7 @@ import { insertionSort } from './algorithms/insertionsort.js'
 import { quickSort } from './algorithms/quicksort.js'
 import { mergeSort } from './algorithms/mergesort.js'
 import { heapSort } from './algorithms/heapsort.js'
+import { cocktailShakerSort } from './algorithms/cocktailshakersort.js'
 
 import { shuffle } from './shuffle.js'
 
@@ -79,7 +80,7 @@ export class App
             case 'Insertion sort':
                 insertionSort(this.arr, this.states);
                 break;
-            case 'Merge sort':
+            case 'Mergesort':
                 mergeSort(this.arr, this.states);
                 break;
             case 'Quicksort':
@@ -87,6 +88,9 @@ export class App
                 break;
             case 'Heapsort':
                 heapSort(this.arr, this.states);
+                break;
+            case 'Cocktail shaker':
+                cocktailShakerSort(this.arr, this.states);
                 break;
         }
         this.currentIndex = 0;
