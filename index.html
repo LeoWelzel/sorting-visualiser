@@ -4,10 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"
+            integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA=="
+            crossorigin="anonymous"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="source/style/main.css">
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNavbar">
+        <a class="navbar-brand" href="#">Sorting algorithm visualiser</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Algorithms
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="algoChoice">
+                        <li><a class="dropdown-item" href="#">Bubble sort</a></li>
+                        <li><a class="dropdown-item" href="#">Insertion sort</a></li>
+                        <!-- <li><a class="dropdown-item" href="#">Selection sort</a></li> -->
+                        <li><hr class="dropdown-divider"></li>
+                        <!-- <li><a class="dropdown-item" href="#">Heapsort</a></li> -->
+                        <li><a class="dropdown-item" href="#">Merge sort</a></li>
+                        <li><a class="dropdown-item" href="#">Quicksort</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <button type="button" class="collapse navbar-collapse btn btn-primary" id="newArray">
+                        New Array
+                    </button>
+                </li>
+                <li class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- invisible ^^ -->
+                    <button type="button" class="collapse navbar-collapse btn btn-primary" id="toggleExecution" disabled>
+                        Select an algorithm
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
     <canvas id="canvas"></canvas>
 
+
     <script type="module" src="source/main.js"></script>
+
 </body>
 </html>

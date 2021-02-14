@@ -1,0 +1,16 @@
+.navbar-nav > li
+{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#mainNavbar
+{
+    height: 5em;
+}
+
+#canvas
+{
+    background-color: #999999;
+    overflow: hidden;
+}
