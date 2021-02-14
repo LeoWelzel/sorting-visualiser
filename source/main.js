@@ -1,6 +1,7 @@
 import { bubbleSort } from './algorithms/bubblesort.js'
 import { insertionSort } from './algorithms/insertionsort.js'
 import { mergeSort } from './algorithms/mergesort.js'
+import { quickSort } from './algorithms/quicksort.js'
 
 import { Draw } from './draw.js';
 
@@ -38,7 +39,7 @@ for (let i = 1; i <= 100; i++)
 shuffle(arr);
 
 let states = [];
-mergeSort(arr, states);
+quickSort(arr, states);
 let currentIndex = 0;
 
 function animate()
